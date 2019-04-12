@@ -2,7 +2,9 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: rem-calc(100);
+  height: rem-calc(150);
+  display:flex;
+  align-items: center;
 
   @include breakpoint(medium) {
     height: rem-calc(200);
@@ -10,5 +12,25 @@
 
   @include breakpoint(xlarge) {
     height: rem-calc(400);
+  }
+  @include breakpoint (small only) {
+    margin-top: 63px;
+  }
+  .hero-title {
+    flex:1 1 auto;
+    color:#ffffff;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+    @include breakpoint (small only) {
+      font-size:2rem;
+    }
+  }
+  .solid-bg-title {
+    flex:1 1 auto;
+    color:#000000;
+    text-align: center;
+    @include breakpoint (small only) {
+      font-size:2rem;
+    }
   }
 }

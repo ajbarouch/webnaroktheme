@@ -22,20 +22,33 @@
 		<?php get_template_part( 'template-parts/mobile-off-canvas' ); ?>
 	<?php endif; ?>
 
-	<header class="site-header" role="banner">
-		<div class="site-title-bar title-bar" <?php foundationpress_title_bar_responsive_toggle(); ?>>
+
+	<header class="site-header" role="banner" data-sticky-container>
+		<div class="site-title-bar title-bar off-canvas" data-offcanvas <?php foundationpress_title_bar_responsive_toggle(); ?>>
 			<div class="title-bar-left">
-				<button aria-label="<?php _e( 'Main Menu', 'foundationpress' ); ?>" class="menu-icon" type="button" data-toggle="<?php foundationpress_mobile_menu_id(); ?>"></button>
-				<span class="site-mobile-title title-bar-title">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-				</span>
+				<div class="mobile-navbar">
+					<span class="site-mobile-title title-bar-title">
+						<?php if ( function_exists( 'the_custom_logo' ) ) {
+							the_custom_logo();
+							} else {
+								?>			
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+						<?php }?>
+					</span>
+					<button aria-label="<?php _e( 'Main Menu', 'foundationpress' ); ?>" class="menu-icon" type="button" data-toggle="<?php foundationpress_mobile_menu_id(); ?>"></button>
+				</div>
 			</div>
 		</div>
 
-		<nav class="site-navigation top-bar" role="navigation" id="<?php foundationpress_mobile_menu_id(); ?>">
+		<nav class="site-navigation top-bar sticky" role="navigation" data-sticky data-options="marginTop:0;" style="width:100%">
 			<div class="top-bar-left">
 				<div class="site-desktop-title top-bar-title">
+				<?php if ( function_exists( 'the_custom_logo' ) ) {
+						the_custom_logo();
+					} else {
+						?>			
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+					<?php }?>
 				</div>
 			</div>
 			<div class="top-bar-right">
@@ -44,6 +57,9 @@
 				<?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) === 'topbar' ) : ?>
 					<?php get_template_part( 'template-parts/mobile-top-bar' ); ?>
 				<?php endif; ?>
+			</div>
+			<div class="top-bar-button">
+			<?php wp_nav_menu( array('menu' => 'Top Bar Button') ); ?>
 			</div>
 		</nav>
 
