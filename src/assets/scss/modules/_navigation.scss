@@ -85,12 +85,19 @@
       color:black;
     }
     @include breakpoint (medium only) {
-      font-size:0.8rem;
+      font-size:0.9rem;
     }
   }
-
-  .menu .active > a { background-color: #ccc; }
-
+  .top-bar-button {
+    a {
+      &:hover {
+        color:#D7D9D7!important;
+      }
+    }
+  }
+  .menu .active > a {
+    background-color: #ccc; 
+  }
   .menu>li:not(.menu-text)>a {
     padding: 1rem;
     @include breakpoint (medium only) {
@@ -119,6 +126,9 @@
   max-width:180px;
   @include breakpoint (small only) {
     max-width: 130px;
+  }
+  @include breakpoint (medium only) {
+    max-width: 140px;
   }
 }
 // WP post navigation

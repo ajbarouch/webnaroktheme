@@ -7,7 +7,7 @@ if ( has_post_thumbnail( $post->ID ) ) { ?>
 	</header>
 <?php } else { ?>
 	<header class="featured-hero solid-bg">
-	<h1 class="solid-bg-title"><?php the_title();?></h1>
+	<h1 class="solid-bg-title"><?php the_title() ?></h1>
 </header> <?php
 } 
 ?>
