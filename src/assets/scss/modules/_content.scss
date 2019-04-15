@@ -5,11 +5,6 @@
 
 .main-grid {
   @include xy-grid();
-  margin-top: 1rem;
-
-  @include breakpoint(medium) {
-    margin-top: 3rem;
-  }
 
   &.sidebar-left {
     // Place the sidebar below main content on small screens ...
@@ -58,7 +53,7 @@ h1 {
   color:$black;
 }
 .entry-content {
-  max-width: 60em;
+  max-width: 100%;
   text-align:center;
   @include breakpoint (medium) {
     margin: 0 auto;
@@ -166,6 +161,9 @@ background-color:transparent;
 form {
   width:fit-content;
   margin:0 auto;
+  @include breakpoint (small only) {
+    width: 100%;
+  }
   #service-buttons {
     margin: 0 auto;
     input[type="radio"] {
@@ -175,10 +173,20 @@ form {
       display:inline-block;
       width:220px;
       background-color:#38726C;
-      padding: 10px 20px;
-      color:#D7D9D7;
+      padding: 15px 20px;
+      color:#FFFFFF;
+      text-align:center;
       font-size:16px;   
-      margin-bottom:60px;
+      @include breakpoint (small only) {
+        width:100%;
+        margin:5px 0;
+        &:last-child {
+          margin:5px 0 10px 0;
+        }
+        &:first-child {
+          margin:0px 0 5px 0;
+        }
+      }
     }
     .radioactive {
       background-color:#834047;
@@ -186,6 +194,21 @@ form {
   }
 }
 .service-toggle {
-  padding:20px;
-  margin-bottom:40px;
+  background-color: #834047;
+  padding:40px 20px;
+  color:#FFFFFF;
+  text-align:center;
+  .service-line {
+    width:200px;
+    height:0px;
+    margin:0 auto;
+    border-bottom: 2px solid #000000;
+  }
+  p {
+    color:#FFFFFF;
+  }
+}
+.service-content {
+  max-width:970px;
+  margin:0 auto;
 }

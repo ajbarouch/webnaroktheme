@@ -79,6 +79,7 @@
     font-size: 1rem;
     line-height: 1;
     letter-spacing: 2px;
+    text-transform: uppercase;
     &:hover:not(.button) {
       background-color: white;
       transition: 0.7s ease;
@@ -91,7 +92,7 @@
   .top-bar-button {
     a {
       &:hover {
-        color:#D7D9D7!important;
+        color:#FFFFFF!important;
       }
     }
   }
@@ -181,13 +182,13 @@
 }
 .menu-icon::after {
   height:3px;
-  background: #D7D9D7;
-  box-shadow: 0 9px 0 #D7D9D7, 0 18px 0 #D7D9D7;
+  background: #FFFFFF;
+  box-shadow: 0 9px 0 #FFFFFF, 0 18px 0 #FFFFFF;
 }
 .menu-icon:hover::after {
   height:3px;
-  background: #D7D9D7;
-  box-shadow: 0 9px 0 #D7D9D7, 0 18px 0 #D7D9D7;
+  background: #FFFFFF;
+  box-shadow: 0 9px 0 #FFFFFF, 0 18px 0 #FFFFFF;
 }
 .site-title-bar {
   width: 100%;

@@ -13,7 +13,7 @@
 get_header(); ?>
 
 <?php get_template_part( 'template-parts/featured-image' ); ?>
-<div class="main-container">
+<div class="main-container-full-width">
 	<div class="main-grid">
 		<main class="main-content">
 			<?php while ( have_posts() ) : the_post(); ?>

@@ -10,6 +10,7 @@
 
 ?>
 <!doctype html>
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <html class="no-js" <?php language_attributes(); ?> >
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>" />
