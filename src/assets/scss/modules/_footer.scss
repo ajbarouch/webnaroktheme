@@ -9,7 +9,8 @@
 
 .footer-grid {
   @include xy-grid;
-  padding: rem-calc(30) 0;
+  padding: 20px 0;
+  justify-content: center;
 
   section {
     @include xy-cell();

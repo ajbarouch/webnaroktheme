@@ -8,12 +8,17 @@
 
 get_header(); ?>
 
-<?php get_template_part( 'template-parts/featured-image' ); ?>
-<div class="main-container">
+
+<div class="main-container-full-width portfolio">
+
 	<div class="main-grid">
 		<main class="main-content">
+			<div class="porthead">
+				<h1 class="portfolio-title"><?php the_title() ?></h1>
+				<h2 class="portfolio-link"><a href="<?php the_field('port_link')?>" target="_blank"><?php the_field('port_link_name')?></a></h2>
+			</div>
 			<?php while ( have_posts() ) : the_post(); ?>
-				<?php get_template_part( 'template-parts/content', '' ); ?>
+				<?php get_template_part( 'template-parts/content', 'portfolio' ); ?>
 				<?php the_post_navigation(); ?>
 			<?php endwhile; ?>
 		</main>

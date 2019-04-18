@@ -45,6 +45,9 @@ require_once( 'library/theme-support.php' );
 /** Add Nav Options to Customer */
 require_once( 'library/custom-nav.php' );
 
+/** Add WP Custom Post Types */
+require_once( 'library/custom-post-type.php' );
+
 /** Change WP's sticky post class */
 require_once( 'library/sticky-posts.php' );
 

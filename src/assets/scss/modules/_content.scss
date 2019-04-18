@@ -83,7 +83,7 @@ h1 {
 .wp-caption > figcaption {
   text-align:center;
 }
-.services-wrap > a {
+.service-wrap > a {
   width:100%;
 }
 .service-item {
@@ -158,6 +158,18 @@ background-color:transparent;
     left: -59%;
   }
 }
+.page {
+  .main-grid {
+    .main-content {
+      max-width:1200px;
+      margin:40px auto;
+      p {
+        font-size:24px;
+        line-height:38.4px;
+      }
+    }
+  }
+}
 form {
   width:fit-content;
   margin:0 auto;
@@ -172,6 +184,7 @@ form {
     label {
       display:inline-block;
       width:220px;
+      transition: width .5s;
       background-color:#38726C;
       padding: 15px 20px;
       color:#FFFFFF;
@@ -190,6 +203,9 @@ form {
     }
     .radioactive {
       background-color:#834047;
+      @include breakpoint (medium) {
+        width:400px;
+      }
     }
   }
 }
@@ -208,7 +224,14 @@ form {
     color:#FFFFFF;
   }
 }
+.services {
+  margin-bottom:40px;
+  hr {
+    border-bottom:1px solid #1B1725;
+    width:50%;
+  }
+}
 .service-content {
-  max-width:970px;
+  max-width:1200px;
   margin:0 auto;
 }

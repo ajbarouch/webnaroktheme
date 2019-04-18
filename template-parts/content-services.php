@@ -10,7 +10,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<div class="entry-content">
+	<div class="entry-content services">
 	<div class="service-content"><?php the_content(); ?></div>
 	<script type="text/javascript">
 
@@ -58,17 +58,17 @@ if(document.getElementById('devrad').checked) {
   </fieldset>
 </form>
 <div id="dev" class="service-toggle"  style="display:none">
-<h2><?php the_field('dev_title') ?></h2>
+<h3><?php the_field('dev_title') ?></h3>
 <div class="service-line"></div>
 <?php the_field('dev_content') ?>
 </div>
 <div id="des" class="service-toggle" style="display:none">
-<h2><?php the_field('design_title') ?></h2>
+<h3><?php the_field('design_title') ?></h3>
 <div class="service-line"></div>
 <?php the_field('design_content') ?>
 </div>
 <div id="ana" class="service-toggle" style="display:none">
-<h2><?php the_field('analytics_title') ?></h2>
+<h3><?php the_field('analytics_title') ?></h3>
 <div class="service-line"></div>
 <?php the_field('analytics_content') ?>
 </div>

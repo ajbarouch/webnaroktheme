@@ -1,0 +1,74 @@
+.contact {
+    .main-grid {
+        .main-content-full-width {
+            background-color:#834047;
+            padding:40px;
+            @include breakpoint (small only) {
+                padding:10px;
+            }
+            h2 {
+                color:#ffffff;
+                margin-bottom: 2rem;
+            }
+            p {
+                padding:0px;
+                color:#ffffff;
+                font-size:20px;
+                line-height:24px;
+
+            }
+            form {
+                background-color:#38726C;
+                padding:40px;
+                display:flex;
+                flex-wrap: wrap;
+                .wpcf7-list-item {
+                    width:100%;
+                }
+                p {              
+                    font-size:20px;
+                    line-height:24px;
+                    flex: 1 0 40%;
+                    padding:20px;
+                    @include breakpoint (small only) {
+                        flex: 1 1 auto;
+                        width:100%;
+                        text-align:left;
+                        padding:0px;
+                    }
+                }
+                label {
+                    color:#ffffff;
+                    font-size:20px;
+                    line-height:24px;
+                    @include breakpoint (small only) {
+                        text-align: left;
+                    }
+                }
+                .wpcf7-form-control.wpcf7-checkbox.wpcf7-validates-as-required {
+                    margin-top:1rem;
+                }
+                .wpcf7-list-item {
+                    margin:0px;
+                }
+            }
+            input {
+                background-color:transparent;
+                color:#ffffff;
+                border-radius:4px;
+            }
+            input[type=submit] {
+                background-color:#834047;
+                color:#ffffff;
+                font-weight: 400;
+                font-size: 1rem;
+                line-height: 1;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                padding: 1rem 3rem;
+                border-radius: 8px;
+                border-style:none;
+            }
+        }
+    }
+}

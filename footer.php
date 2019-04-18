@@ -12,6 +12,7 @@
 <footer class="footer-container">
 	<div class="footer-grid">
 		<?php dynamic_sidebar( 'footer-widgets' ); ?>
+		<p><?php echo "© "; echo date("Y"); echo " "; echo bloginfo('name'); ?></p>
 	</div>
 </footer>
 
