@@ -72,8 +72,6 @@ if(document.getElementById('devrad').checked) {
 <div class="service-line"></div>
 <?php the_field('analytics_content') ?>
 </div>
-
-
 		<?php edit_post_link( __( '(Edit)', 'foundationpress' ), '<span class="edit-link">', '</span>' ); ?>
 	</div>
 </article>

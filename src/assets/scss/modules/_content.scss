@@ -56,7 +56,7 @@ h1 {
   max-width: 100%;
   text-align:center;
   @include breakpoint (medium) {
-    margin: 0 auto;
+    margin: 0px auto;
     text-align:left;
     p {
     padding:30px;
@@ -189,7 +189,7 @@ form {
       padding: 15px 20px;
       color:#FFFFFF;
       text-align:center;
-      font-size:16px;   
+      font-size:16px;
       @include breakpoint (small only) {
         width:100%;
         margin:5px 0;
@@ -214,6 +214,14 @@ form {
   padding:40px 20px;
   color:#FFFFFF;
   text-align:center;
+  p {
+    max-width:970px;
+    margin:0 auto;
+  }
+  a {
+    text-decoration: underline;
+    color:$black;
+  }
   .service-line {
     width:200px;
     height:0px;
@@ -225,7 +233,6 @@ form {
   }
 }
 .services {
-  margin-bottom:40px;
   hr {
     border-bottom:1px solid #1B1725;
     width:50%;
@@ -233,5 +240,50 @@ form {
 }
 .service-content {
   max-width:1200px;
+  margin:20px auto;
+}
+p.copyright {
+  width: 100%;
+  display:block;
+  text-align:center;
+}
+.foot-contact {
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  padding:40px;
+  max-width:1200px;
   margin:0 auto;
+  justify-content: center;
+  align-content:center;
+  align-items:center;
+  .foot-callout {
+    flex:1 1 70%;
+  }
+  .foot-callout-button {
+    flex:1 0 30%;
+    text-align:center;
+    a {
+      font-size:1rem;
+      border-radius: 8px;
+      padding: 16px 40px;
+    }
+  }
+}
+.service-inner {
+  background-color:#834047;
+  color:#ffffff;
+  display:flex;
+  padding:40px;
+  align-items:center;
+  justify-content: center;
+  p {
+    color:#ffffff;
+  }
+  .service-copy {
+    flex:1 1 auto;
+  }
+  .service-sidebar {
+    flex: 1 0 30%;
+  }
 }

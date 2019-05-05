@@ -8,11 +8,19 @@
  * @since FoundationPress 1.0.0
  */
 ?>
-
+<div class="foot-contact">
+	<div class="foot-callout">
+		<h4>Have questions? Want to know what we can do for you?</h4>
+	</div>
+	<div class="foot-callout-button">
+		<a class="button">Contact Us</a>
+	</div>
+</div>
 <footer class="footer-container">
+
 	<div class="footer-grid">
 		<?php dynamic_sidebar( 'footer-widgets' ); ?>
-		<p><?php echo "© "; echo date("Y"); echo " "; echo bloginfo('name'); ?></p>
+		<p class="copyright"><?php echo "© "; echo date("Y"); echo " "; echo bloginfo('name'); ?></p>
 	</div>
 </footer>
 
