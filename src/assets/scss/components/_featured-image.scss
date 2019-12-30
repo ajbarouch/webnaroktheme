@@ -2,10 +2,10 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: rem-calc(150);
+  height: rem-calc(400);
   display:flex;
   align-items: center;
-
+  text-transform: uppercase;
   @include breakpoint(medium) {
     height: rem-calc(200);
   }
