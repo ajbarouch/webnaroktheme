@@ -280,8 +280,6 @@ p.copyright {
     }
   }
   .foot-callout-button {
-    flex:1 0 50%;
-    text-align:center;
     @include breakpoint (small only) {
       flex: 1 1 auto;
     }
