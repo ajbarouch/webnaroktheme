@@ -263,18 +263,16 @@ p.copyright {
   padding:40px;
   max-width:1200px;
   margin:0 auto;
-  justify-content: center;
+  justify-content: space-between;
   align-content:center;
   align-items:center;
   @include breakpoint (small only) {
     flex-direction: column;
   }
   .foot-callout {
-    flex:1 1 50%;
     @include breakpoint (small only) {
       flex: 1 1 auto;
       margin-bottom:30px;
-      text-align: center;
     }
     h4 {
       font-size: 1.4rem!important;
