@@ -59,17 +59,14 @@ if(document.getElementById('devrad').checked) {
 </form>
 <div id="dev" class="service-toggle"  style="display:none">
 <h3><?php the_field('dev_title') ?></h3>
-<div class="service-line"></div>
 <?php the_field('dev_content') ?>
 </div>
 <div id="des" class="service-toggle" style="display:none">
 <h3><?php the_field('design_title') ?></h3>
-<div class="service-line"></div>
 <?php the_field('design_content') ?>
 </div>
 <div id="ana" class="service-toggle" style="display:none">
 <h3><?php the_field('analytics_title') ?></h3>
-<div class="service-line"></div>
 <?php the_field('analytics_content') ?>
 </div>
 		<?php edit_post_link( __( '(Edit)', 'foundationpress' ), '<span class="edit-link">', '</span>' ); ?>

@@ -61,11 +61,13 @@
 // Tablet and desktop menu
 
 .top-bar {
-
-  .top-bar-title a {
-    font-size: 1.5rem;
-    color: #B9B9B9;
-    line-height: 1.5;
+  .top-bar-title {
+    margin:.4rem 1rem .4rem 0;
+    a {
+      font-size: 1.5rem;
+      color: #B9B9B9;
+      line-height: 1.5;
+    }
   }
   .is-dropdown-submenu-item {
     text-align: center;
@@ -75,8 +77,8 @@
     color: $light-gray;
     padding-top: 0;
     padding-bottom: 0;
-    font-weight: 400;
-    font-size: 1.2rem;
+    font-weight: 800;
+    font-size: 1rem;
     line-height: 1;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -124,7 +126,7 @@
   }
 }
 .custom-logo {
-  max-width:180px;
+  max-width:150px;
   @include breakpoint (small only) {
     max-width: 130px;
   }
@@ -163,6 +165,12 @@
   }
   @include breakpoint (small only) {
     display:none;
+  }
+}
+.sticky.is-anchored{
+  @include breakpoint (small only) {
+    top:63px!important;
+    position:fixed;
   }
 }
 .mobile-navbar {
